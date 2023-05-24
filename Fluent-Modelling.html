@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Fluent Modelling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Google Fonts Import -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Cristian Villazhannay</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Welcome</a></li>
+						<li><a href="index.html#one" class="active">Projects</a></li>
+						<li><a href="index.html#two">About Me</a></li>
+						<li><a href="index.html#three">Get in Touch</a></li>
+						<!-- We don't need access to the elements page now.
+						<li><a href="elements.html">Elements</a></li>
+						-->
+
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Modelling in Fluent</h1>
+							<!--
+							<span class="image fit"><img src="images/meshed-ahmed-body-geometry.png" alt="" /></span>
+							-->
+
+							<h2>Background</h2>
+							<p>As an intitial foray into computational fluid dynamics, we wanted to create a working model of polypropylene flows into aluminium molds. The reason that this particular project was chosen is because it was being developed concurrently with the <a href="Injection-Molding.html" target="_blank">injection molded part</a>; therefore, we could use the physical parts as a form of validation of our simulation.
+							</p>
+							<p>
+							More specifically, however, our simulation was aimed at optimizing the flow of the polymer within the mold itself. By analyzing this flow, we could identify potential mold design issues that would lead to problems like sinkage, weld lines, jetting, etc. 
+							</p>
+
+							<h2>Goal</h2>
+							<p>To create a simulation of polypropylene flows in aluminium molds that accurately depicts polymer flow and direction, and to optimize mold design and polymer flow path. 
+							</p>
+
+							<h2>Results</h2>
+							<p>Some of the challenges that were encountered in this problem were wrestling with Fluent's ability to process interfaces with high viscosity differentials. This is especially relevant for injection molded plastic, where the zero-shear viscosity between the air and plastic differs by 7 orders of magnitude!
+							</p>
+							<p>Likewise, the physical properties of molten polypropylene are highly non-Newtonian, and implementation of an accurate shear-rate being reflected on the viscosity presented issue.</p>
+
+							<!--
+							<div class="split style2">
+								<section>
+									<span class="image fit"><img src="images/square-edges-mold.gif" alt=""></span>
+								</section>
+								<section>
+
+									<div class="aln-middle"><p>Hello! I am the caption that you will be editiing.</p></div>
+
+								</section>
+							</div>
+							-->
+
+
+							<div class="box alt">
+								<div class="row aln-middle aln-left">
+											
+									<div class="col-5"><span class="image fit"><img src="images/square-edges-mold.gif" alt=""></span></div>
+											
+											
+									<div class="col-4"><p>This first simulation was created with sharp corners to see if we could accurately model the air being trapped in the corner of the mold.</p></div>
+
+								</div>
+							</div>
+
+
+							<div class="box alt">
+								<div class="row aln-middle aln-right">
+											
+									<div class="col-4"><p>This second simulation was created with rounded corners to demonstrate how rounded corners will permit better flow through the mold. </p></div>
+									<div class="col-5"><span class="image fit"><img src="images/round-edges-mold.gif" alt=""></span></div>
+			
+								</div>
+							</div>
+
+							<p>However, in the face of all these challenges, the team was able to create a running VoF (Volume of Fluid) simulation of an idealized version of polypropylene into an aluminium mold. 
+							</p>
+
+							<h2>Conclusions</h2>
+							<p>Seeing as I was in charge of investigating, creating, and modifying parameters within the actual Fluent software that would help us get the best possible results; I learned how to approach and begin modelling physical problems in CFD programs, through a deep understanding of the different parameters and their effects on the simulation behavior. This included analysis of solution convergence, residual error, and documention. 
+							</p>
+
+							<p>This project also served to reinforce my understanding of how engineers can affirm that the results they get are correct. This was manifested through the verification and validation process, where we first check that the correct equations are being solved, and then we confirm with physical or experimental data.  </p>
+
+							<p>If this project were to be revisited, however, the team would employ better suited tools for these flows like Ansys Polyflow.</p>
+
+							<ul class="actions">
+										<li><a href="reports/Polymer-Flows-in-Injection-Molding.pdf" class="button" target="_blank">See the report!</a></li>
+									</ul>
+						</div>
+
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
