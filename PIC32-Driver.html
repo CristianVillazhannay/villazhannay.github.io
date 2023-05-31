@@ -43,18 +43,43 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">PIC32 Motor Driver</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+
+							<div class="box alt">
+								<div class="row aln-center">
+									<div>
+										<span class="image"><img src="images/microchip-by-sergey-patutin.png" alt="" /></span>
+									</div>
+								</div>
+							</div>
+
+
 							<h2>Background</h2>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+							<p>This introduction to embedded systems utilizes C programming with the PIC32 to help acquaint the student with the basics of embedded programming. This includes accessesing and utilizing chip registers; creating Interrupt Service Routines to prioritize tasks; and learning how to use communication protocols like SPI, I2C, and serial.</p>
+
 
 							<h2>Goal</h2>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>The goal of this project was to to implement a PID system using a PIC32 microcontroller on a stepper motor with an encoder. This motor was programmed to respond to a MATLAB GUI via the command line through a serial port that controlled whether it ran, mimicked an input trajectory, or waited for user commands. Each command is clearly outlined in the video, where the GUI is displayed.</p>
 
 							<h2>Results</h2>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>The motor driver was a complete success. In the video below, I show a walkthrough how to use the GUI, and how responsive the motor is to commmands that are in input.</p>
+
+
+							<div class="box alt">
+								<div class="row aln-center">
+									<div>
+										<video width="640" height="480" controls>
+							  				<source src="images/pic32-audioless-demo.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>
+								</div>
+							</div>
+
+
+
 
 							<h2>Conclusions</h2>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>From this project, I was able to fuel my passion for mechatronics. I learned how to code in C in a way that is memory-efficient, and how to use bare metal C to communicate with chip registries in microcontrollers. I also gained a a deep understanding of communication protocols like SPI, I2C, and serial and their respective uses in industry. This understanding came from implementation of these protocols, and how they could help chips talk to one another. </p>
 						</div>
 					</section>
 
